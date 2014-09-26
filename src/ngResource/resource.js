@@ -93,7 +93,7 @@ function shallowClearAndCopy(src, dst) {
  *   `$resource('http://example.com/resource.json')` or `$resource('http://example.com/:id.json')`
  *   or even `$resource('http://example.com/resource/:resource_id.:format')`
  *   If the parameter before the suffix is empty, :resource_id in this case, then the `/.` will be
- *   collapsed down to a single `.`.  If you need this sequence to appear and not collapse then you
+ *   collapsed down to a single `.`.  If you nein ed this sequence to appear and not collapse then you
  *   can escape it with `/\.`.
  *
  * @param {Object=} paramDefaults Default values for `url` parameters. These can be overridden in
@@ -180,7 +180,7 @@ function shallowClearAndCopy(src, dst) {
  *     'delete': {method:'DELETE'} };
  *   ```
  *
- *   Calling these methods invoke an {@link ng.$http} with the specified http method,
+ *   Calling these methods invoke a {@link ng.$http} with the specified http method,
  *   destination and parameters. When the data is returned from the server then the object is an
  *   instance of the resource class. The actions `save`, `remove` and `delete` are available on it
  *   as  methods with the `$` prefix. This allows you to easily perform CRUD operations (create,
